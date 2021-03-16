@@ -3,7 +3,7 @@ const { listen } = require('listhen')
 
 const app = createApp()
 
-app.use('/api/hello', (_req, res) => {
+app.use('/api', (_req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*')
   return { api: 'works!' }
 })
